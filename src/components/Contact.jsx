@@ -32,18 +32,18 @@ export default function Contact() {
     setTimeout(()=>setSent(false),4000)
   }
 
-  const inp = 'w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 placeholder:text-gray-400 focus:outline-none focus:border-violet-400 focus:bg-white focus:ring-2 focus:ring-violet-100 transition-all duration-200'
+  const inp = 'w-full bg-white/[0.04] border border-white/[0.08] rounded-xl px-4 py-3 text-sm text-white/80 placeholder:text-white/20 focus:outline-none focus:border-violet-500/50 focus:bg-white/[0.06] focus:ring-2 focus:ring-violet-500/10 transition-all duration-200'
 
   return (
-    <section id="contact" className="py-28 bg-white">
+    <section id="contact" className="py-28 bg-[#0D0D12]">
       <div className="max-w-7xl mx-auto px-6">
 
         <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={{once:true,margin:'-80px'}} className="text-center mb-16">
           <motion.span variants={fadeUp} className="section-label">Contact</motion.span>
-          <motion.h2 variants={fadeUp} className="font-display text-4xl md:text-5xl font-bold text-gray-900">
+          <motion.h2 variants={fadeUp} className="font-display text-4xl md:text-5xl font-bold text-white">
             Let's <span className="text-gradient">Work Together</span>
           </motion.h2>
-          <motion.p variants={fadeUp} className="mt-4 text-gray-500 max-w-md mx-auto text-sm leading-relaxed">
+          <motion.p variants={fadeUp} className="mt-4 text-white/40 max-w-md mx-auto text-sm leading-relaxed">
             Open to full-time, freelance, and consulting roles. Drop me a message.
           </motion.p>
         </motion.div>
@@ -52,26 +52,26 @@ export default function Contact() {
 
           <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={{once:true,margin:'-60px'}} className="lg:col-span-2 flex flex-col gap-4">
             {info.map(({Icon,label,value,href})=>(
-              <motion.div key={label} variants={fadeUp} className="card card-hover p-5 flex items-center gap-4 hover:border-violet-200">
-                <div className="w-9 h-9 rounded-xl bg-violet-50 border border-violet-100 flex items-center justify-center flex-shrink-0">
-                  <Icon size={15} className="text-violet-600"/>
+              <motion.div key={label} variants={fadeUp} className="card card-hover p-5 flex items-center gap-4 hover:border-violet-500/25">
+                <div className="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/25 flex items-center justify-center flex-shrink-0">
+                  <Icon size={15} className="text-violet-400"/>
                 </div>
                 <div className="min-w-0">
-                  <p className="text-gray-400 text-[11px] font-semibold mb-0.5 uppercase tracking-wider">{label}</p>
+                  <p className="text-white/25 text-[11px] font-semibold mb-0.5 uppercase tracking-wider">{label}</p>
                   {href
-                    ? <a href={href} className="text-gray-700 text-sm font-medium hover:text-violet-600 transition-colors truncate block">{value}</a>
-                    : <p className="text-gray-700 text-sm font-medium">{value}</p>
+                    ? <a href={href} className="text-white/70 text-sm font-medium hover:text-violet-400 transition-colors truncate block">{value}</a>
+                    : <p className="text-white/70 text-sm font-medium">{value}</p>
                   }
                 </div>
               </motion.div>
             ))}
 
-            <motion.div variants={fadeUp} className="card card-hover p-5 hover:border-gray-200">
-              <p className="text-gray-400 text-[11px] uppercase tracking-wider font-semibold mb-3">Find me online</p>
+            <motion.div variants={fadeUp} className="card card-hover p-5 hover:border-white/[0.14]">
+              <p className="text-white/25 text-[11px] uppercase tracking-wider font-semibold mb-3">Find me online</p>
               <div className="flex gap-2.5">
                 {socials.map(({Icon,href,label})=>(
                   <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}
-                    className="w-9 h-9 bg-gray-50 border border-gray-200 hover:border-violet-300 hover:bg-violet-50 hover:text-violet-600 text-gray-400 rounded-xl flex items-center justify-center transition-all duration-200">
+                    className="w-9 h-9 bg-white/[0.04] border border-white/[0.08] hover:border-violet-500/40 hover:bg-violet-500/10 hover:text-violet-400 text-white/30 rounded-xl flex items-center justify-center transition-all duration-200">
                     <Icon size={15}/>
                   </a>
                 ))}
@@ -80,27 +80,27 @@ export default function Contact() {
           </motion.div>
 
           <motion.form variants={stagger} initial="hidden" whileInView="show" viewport={{once:true,margin:'-60px'}}
-            onSubmit={onSubmit} className="lg:col-span-3 card card-hover p-8 hover:border-gray-200">
+            onSubmit={onSubmit} className="lg:col-span-3 card card-hover p-8 hover:border-white/[0.14]">
             <div className="grid sm:grid-cols-2 gap-4 mb-4">
               <motion.div variants={fadeUp}>
-                <label className="block text-gray-500 text-xs font-semibold mb-2 uppercase tracking-wider">Name</label>
+                <label className="block text-white/35 text-xs font-semibold mb-2 uppercase tracking-wider">Name</label>
                 <input type="text" name="name" required value={form.name} onChange={onChange} placeholder="Your name" className={inp}/>
               </motion.div>
               <motion.div variants={fadeUp}>
-                <label className="block text-gray-500 text-xs font-semibold mb-2 uppercase tracking-wider">Email</label>
+                <label className="block text-white/35 text-xs font-semibold mb-2 uppercase tracking-wider">Email</label>
                 <input type="email" name="email" required value={form.email} onChange={onChange} placeholder="you@company.com" className={inp}/>
               </motion.div>
             </div>
             <motion.div variants={fadeUp} className="mb-4">
-              <label className="block text-gray-500 text-xs font-semibold mb-2 uppercase tracking-wider">Subject</label>
+              <label className="block text-white/35 text-xs font-semibold mb-2 uppercase tracking-wider">Subject</label>
               <input type="text" name="subject" value={form.subject} onChange={onChange} placeholder="Project / Job Opportunity" className={inp}/>
             </motion.div>
             <motion.div variants={fadeUp} className="mb-7">
-              <label className="block text-gray-500 text-xs font-semibold mb-2 uppercase tracking-wider">Message</label>
+              <label className="block text-white/35 text-xs font-semibold mb-2 uppercase tracking-wider">Message</label>
               <textarea name="message" required rows={5} value={form.message} onChange={onChange} placeholder="Tell me about your project or opportunity..." className={`${inp} resize-none`}/>
             </motion.div>
             <motion.button variants={fadeUp} type="submit"
-              className="w-full py-3.5 bg-violet-600 hover:bg-violet-700 text-white font-semibold text-sm rounded-xl transition-all duration-200 shadow-md hover:shadow-lg hover:shadow-violet-200 flex items-center justify-center gap-2 group">
+              className="w-full py-3.5 bg-violet-600 hover:bg-violet-500 text-white font-semibold text-sm rounded-xl transition-all duration-200 shadow-lg shadow-violet-900/40 flex items-center justify-center gap-2 group">
               {sent ? 'Sent ✓' : (<>Send Message<FiSend size={14} className="group-hover:translate-x-px group-hover:-translate-y-px transition-transform"/></>)}
             </motion.button>
           </motion.form>

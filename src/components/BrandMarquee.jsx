@@ -20,10 +20,10 @@ function MarqueeRow({ brands, reverse = false }) {
       >
         {items.map((name, i) => (
           <span key={i} className="flex items-center flex-shrink-0">
-            <span className="mx-5 text-sm font-medium tracking-wide whitespace-nowrap cursor-default text-gray-400 hover:text-gray-800 transition-colors duration-200">
+            <span className="mx-5 text-sm font-medium tracking-wide whitespace-nowrap cursor-default text-white/25 hover:text-white/70 transition-colors duration-200">
               {name}
             </span>
-            <span className="text-violet-300 text-[9px] select-none">◆</span>
+            <span className="text-violet-500/40 text-[9px] select-none">◆</span>
           </span>
         ))}
       </div>

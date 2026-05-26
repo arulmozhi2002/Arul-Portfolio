@@ -35,23 +35,21 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/90 backdrop-blur-xl border-b border-gray-100 shadow-sm py-3'
+          ? 'bg-[#0D0D12]/90 backdrop-blur-xl border-b border-white/[0.06] shadow-lg shadow-black/30 py-3'
           : 'bg-transparent py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
 
-        {/* Logo */}
         <button onClick={() => scrollTo('#home')} className="flex items-center gap-2.5">
           <div className="w-8 h-8 rounded-lg bg-violet-600 flex items-center justify-center text-white font-display font-bold text-sm">
             AM
           </div>
-          <span className="hidden sm:block font-display font-semibold text-gray-900 text-sm tracking-tight">
-            Arul<span className="text-violet-600">.</span>dev
+          <span className="hidden sm:block font-display font-semibold text-white text-sm tracking-tight">
+            Arul<span className="text-violet-400">.</span>dev
           </span>
         </button>
 
-        {/* Desktop nav */}
         <nav className="hidden md:flex items-center">
           {navLinks.map(({ label, href }) => {
             const id = href.replace('#', '')
@@ -62,14 +60,14 @@ export default function Navbar() {
                 onClick={() => scrollTo(href)}
                 className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-colors duration-200 ${
                   isActive
-                    ? 'text-violet-700'
-                    : 'text-gray-500 hover:text-gray-900'
+                    ? 'text-violet-300'
+                    : 'text-white/50 hover:text-white'
                 }`}
               >
                 {isActive && (
                   <motion.span
                     layoutId="nav-pill"
-                    className="absolute inset-0 bg-violet-50 rounded-lg border border-violet-100"
+                    className="absolute inset-0 bg-violet-500/10 rounded-lg border border-violet-500/20"
                   />
                 )}
                 <span className="relative z-10">{label}</span>
@@ -81,13 +79,13 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <a
             href="mailto:arulrevupdc123@gmail.com"
-            className="hidden md:inline-flex items-center px-4 py-2 bg-violet-600 hover:bg-violet-700 text-white text-sm font-semibold rounded-lg transition-all duration-200 shadow-sm hover:shadow-md hover:shadow-violet-200"
+            className="hidden md:inline-flex items-center px-4 py-2 bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold rounded-lg transition-all duration-200 shadow-md shadow-violet-900/40"
           >
             Hire Me
           </a>
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden p-2 text-gray-500 hover:text-gray-900"
+            className="md:hidden p-2 text-white/50 hover:text-white"
           >
             {menuOpen ? <FiX size={20} /> : <FiMenu size={20} />}
           </button>
@@ -100,7 +98,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t border-gray-100 shadow-sm overflow-hidden"
+            className="md:hidden bg-[#13131A] border-t border-white/[0.06] shadow-xl overflow-hidden"
           >
             <div className="px-6 py-4 flex flex-col gap-1">
               {navLinks.map(({ label, href }) => (
@@ -109,8 +107,8 @@ export default function Navbar() {
                   onClick={() => scrollTo(href)}
                   className={`text-left px-4 py-3 rounded-xl text-sm font-medium transition-all ${
                     active === href.replace('#', '')
-                      ? 'bg-violet-50 text-violet-700 border border-violet-100'
-                      : 'text-gray-500 hover:text-gray-900 hover:bg-gray-50'
+                      ? 'bg-violet-500/10 text-violet-300 border border-violet-500/20'
+                      : 'text-white/50 hover:text-white hover:bg-white/[0.04]'
                   }`}
                 >
                   {label}
