@@ -78,7 +78,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3">
           <a
-            href="mailto:arulrevupdc123@gmail.com"
+            href="mailto:Arunmj2002@gmail.com"
             className="hidden md:inline-flex items-center px-4 py-2 bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold rounded-lg transition-all duration-200 shadow-md shadow-violet-900/40"
           >
             Hire Me
@@ -115,7 +115,7 @@ export default function Navbar() {
                 </button>
               ))}
               <a
-                href="mailto:arulrevupdc123@gmail.com"
+                href="mailto:Arunmj2002@gmail.com"
                 className="mt-2 px-4 py-3 bg-violet-600 text-white text-sm font-semibold rounded-xl text-center"
               >
                 Hire Me

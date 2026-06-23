@@ -167,7 +167,7 @@ export const education = {
 export const socialLinks = {
   github: 'https://github.com/arulmozhi2002',
   linkedin: 'https://www.linkedin.com/in/arul-r-a4b416249',
-  email: 'mailto:arulrevupdc123@gmail.com',
+  email: 'mailto:Arunmj2002@gmail.com',
   phone: 'tel:+918248965966',
 }
 

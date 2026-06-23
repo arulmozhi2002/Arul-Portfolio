@@ -6,7 +6,7 @@ const fadeUp = { hidden:{opacity:0,y:24}, show:{opacity:1,y:0,transition:{durati
 const stagger = { hidden:{}, show:{transition:{staggerChildren:0.09}} }
 
 const info = [
-  { Icon:FiMail,   label:'Email',    value:'arulrevupdc123@gmail.com', href:'mailto:arulrevupdc123@gmail.com' },
+  { Icon:FiMail,   label:'Email',    value:'Arunmj2002@gmail.com', href:'mailto:Arunmj2002@gmail.com' },
   { Icon:FiPhone,  label:'Phone',    value:'+91 82489 65966',           href:'tel:+918248965966' },
   { Icon:FiMapPin, label:'Location', value:'Coimbatore, Tamil Nadu',    href:null },
 ]
@@ -14,7 +14,7 @@ const info = [
 const socials = [
   { Icon:FiLinkedin, href:'https://www.linkedin.com/in/arul-r-a4b416249', label:'LinkedIn' },
   { Icon:FiGithub,   href:'https://github.com/arulmozhi2002',             label:'GitHub'   },
-  { Icon:FiMail,     href:'mailto:arulrevupdc123@gmail.com',               label:'Email'    },
+  { Icon:FiMail,     href:'mailto:Arunmj2002@gmail.com',               label:'Email'    },
 ]
 
 export default function Contact() {
@@ -27,7 +27,7 @@ export default function Contact() {
     e.preventDefault()
     const {name,email,subject,message} = form
     const body = `Hi Arul,\n\nMy name is ${name}.\n\n${message}\n\nReply to: ${email}`
-    window.location.href = `mailto:arulrevupdc123@gmail.com?subject=${encodeURIComponent(subject||'Portfolio Inquiry')}&body=${encodeURIComponent(body)}`
+    window.location.href = `mailto:Arunmj2002@gmail.com?subject=${encodeURIComponent(subject||'Portfolio Inquiry')}&body=${encodeURIComponent(body)}`
     setSent(true)
     setTimeout(()=>setSent(false),4000)
   }

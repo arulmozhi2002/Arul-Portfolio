@@ -49,7 +49,7 @@ export default function About() {
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold rounded-xl transition-all shadow-lg shadow-violet-900/40">
                 <FiDownload size={14}/> Download CV
               </a>
-              <a href="mailto:arulrevupdc123@gmail.com"
+              <a href="mailto:Arunmj2002@gmail.com"
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/[0.06] border border-white/[0.1] hover:border-white/[0.2] text-white/80 text-sm font-semibold rounded-xl transition-all shadow-sm">
                 <FiMail size={14}/> Get in Touch
               </a>

@@ -14,7 +14,7 @@ const roles = [
 const socials = [
   { Icon: FiGithub,   href: 'https://github.com/arulmozhi2002',             label: 'GitHub'   },
   { Icon: FiLinkedin, href: 'https://www.linkedin.com/in/arul-r-a4b416249', label: 'LinkedIn' },
-  { Icon: FiMail,     href: 'mailto:arulrevupdc123@gmail.com',               label: 'Email'    },
+  { Icon: FiMail,     href: 'mailto:Arunmj2002@gmail.com',               label: 'Email'    },
 ]
 
 export default function Hero() {
