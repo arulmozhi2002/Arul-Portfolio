@@ -63,7 +63,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/20 text-xs text-center sm:text-left">
-            © {new Date().getFullYear()} Arul Mozhi Selvam R · Built with React.js &amp; Tailwind CSS
+            © {new Date().getFullYear()} Arul R · Built with React.js &amp; Tailwind CSS
           </p>
           <motion.button onClick={scrollTop} whileHover={{scale:1.08}} whileTap={{scale:0.95}}
             className="w-8 h-8 bg-white/[0.04] border border-white/[0.08] hover:border-violet-500/40 hover:bg-violet-500/10 hover:text-violet-400 text-white/25 rounded-lg flex items-center justify-center transition-colors duration-200"

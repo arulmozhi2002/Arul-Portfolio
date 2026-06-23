@@ -23,7 +23,7 @@ export default function About() {
           {/* Bio */}
           <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={{once:true,margin:'-60px'}} className="space-y-5">
             <motion.p variants={fadeUp} className="text-white/80 text-lg leading-relaxed">
-              Hi, I'm <span className="text-white font-semibold">Arul Mozhi Selvam R</span> — a Full Stack Developer from{' '}
+              Hi, I'm <span className="text-white font-semibold">Arul R</span> — a Full Stack Developer from{' '}
               <span className="text-violet-400 font-medium">Coimbatore, Tamil Nadu</span> with 3+ years shipping production apps.
             </motion.p>
             <motion.p variants={fadeUp} className="text-white/45 leading-relaxed">
