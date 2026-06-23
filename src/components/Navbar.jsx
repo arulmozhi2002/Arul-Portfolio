@@ -43,7 +43,7 @@ export default function Navbar() {
 
         <button onClick={() => scrollTo('#home')} className="flex items-center gap-2.5">
           <div className="w-8 h-8 rounded-lg bg-violet-600 flex items-center justify-center text-white font-display font-bold text-sm">
-            AM
+            AR
           </div>
           <span className="hidden sm:block font-display font-semibold text-white text-sm tracking-tight">
             Arul<span className="text-violet-400">.</span>dev

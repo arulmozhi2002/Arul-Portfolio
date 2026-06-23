@@ -20,7 +20,7 @@ export default function Footer() {
 
           <div>
             <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-violet-600 flex items-center justify-center text-white font-display font-bold text-sm">AM</div>
+              <div className="w-8 h-8 rounded-lg bg-violet-600 flex items-center justify-center text-white font-display font-bold text-sm">AR</div>
               <span className="font-display font-semibold text-white text-sm tracking-tight">Arul<span className="text-violet-400">.</span>dev</span>
             </div>
             <p className="text-white/35 text-sm leading-relaxed max-w-xs mb-5">
