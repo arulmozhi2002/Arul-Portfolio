@@ -83,11 +83,8 @@ export default function Hero() {
             transition={{ duration: 0.65, delay: 0.08 }}
             className="font-display font-bold leading-[0.93] tracking-tight mb-6"
           >
-            <span className="block text-[clamp(2.8rem,9.5vw,6.5rem)] text-white">
-              Arul Mozhi
-            </span>
-            <span className="block text-[clamp(2.8rem,9.5vw,6.5rem)] text-gradient">
-              Selvam R
+            <span className="text-[clamp(2.8rem,9.5vw,6.5rem)] text-white">
+              Arul <span className="text-violet-400">.</span> <span className="text-gradient">R</span>
             </span>
           </motion.h1>
 
@@ -143,8 +140,9 @@ export default function Hero() {
             className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-12"
           >
             <a
-              href="/Resume_Arul (3).pdf"
-              download="Arul_Mozhi_Selvam_Resume.pdf"
+              href="https://drive.google.com/file/d/1BZSX76dpUP_VPBVHLagDC1dD_H75Wuhk/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group w-full sm:w-auto px-7 py-3.5 bg-violet-600 hover:bg-violet-500 text-white rounded-xl font-semibold text-sm transition-all duration-200 shadow-lg shadow-violet-900/50 flex items-center justify-center gap-2"
             >
               Download Resume

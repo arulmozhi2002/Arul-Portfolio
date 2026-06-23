@@ -43,7 +43,9 @@ export default function About() {
             </motion.div>
 
             <motion.div variants={fadeUp} className="flex flex-wrap gap-3 pt-2">
-              <a href="/Resume_Arul (3).pdf" download="Arul_Mozhi_Selvam_Resume.pdf"
+              <a href="https://drive.google.com/file/d/1BZSX76dpUP_VPBVHLagDC1dD_H75Wuhk/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold rounded-xl transition-all shadow-lg shadow-violet-900/40">
                 <FiDownload size={14}/> Download CV
               </a>
